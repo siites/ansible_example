@@ -1,0 +1,9 @@
+---
+- name: Task to download file
+  hosts: all
+  tasks:
+    - name: Download docker-compose
+      get_url:
+        url: https://nginx.org/download/nginx-1.19.0.tar.gz
+        dest: /tmp/nginx-1.19.0.tar.gz
+        mode: '644'
