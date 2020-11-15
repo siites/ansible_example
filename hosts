@@ -1,8 +1,6 @@
-[ubuntu]
-10.10.10.11
-
-[centos]
-10.10.10.12
+[vagrant]
+deploy01 ansible_host=127.0.0.1 ansible_port=2222 ansible_user=vagrant ansible_ssh_private_key_file=.vagrant/machines/deploy_01/virtualbox/private_key
+deploy02 ansible_host=127.0.0.1 ansible_port=2200 ansible_user=vagrant ansible_ssh_private_key_file=.vagrant/machines/deploy_02/virtualbox/private_key
 
 [all:vars]
 ansible_user=vagrant

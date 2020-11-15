@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
 
   # #deploy_03
   # config.vm.define "deploy_03" do |cfg|
-  #   cfg.vm.box = "sysnet4admin/windows2016"
+  #   cfg.vm.box = "mwrock/Windows2012R2"
   #   cfg.vm.provider "virtualbox" do |vb|
   #     vb.name = "deploy_03"
   #     # vb.customize['modifyvm', :id, '--clipboard', 'bidirectional']

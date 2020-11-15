@@ -1,0 +1,15 @@
+---
+- hosts: all
+  vars:
+    user_name: ansibleAdmin
+    group_name: ansible
+  become: true
+  tasks:
+    - name: group_name 변수로 지정된 그룹을 작성
+      group:
+        name: "{{ group_name }}"
+
+    - name: user_name 변수로 지정된 사용자를 작성
+      user: "{{ user_name }}"
+      groups: "{{ group_name }}"
+      generate_ssh_key: true
